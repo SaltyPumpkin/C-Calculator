@@ -2,6 +2,11 @@
 
 A simple calculator project developed in C++ while learning programming and Git.
 
+
+# Author
+
+SaltyPumpkin
+
 ## Description
 
 This project is part of my C++ learning process. It contains basic calculator functionality and is used to practice concepts such as:
