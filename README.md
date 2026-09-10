@@ -1,6 +1,6 @@
-# C-Calculator
+# Example
 
-A simple calculator project developed in C++ while learning programming and Git.
+A simple project developed in C++ while learning programming and Git.
 
 
 # Author
