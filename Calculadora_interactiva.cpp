@@ -30,15 +30,15 @@ int main() {
 
     double num1, num2, result;
 
-    if (choice == 1) {
-        cout << "Ingrese el primer número: ";
+    if (choice == 1) { // Suma
+        cout << "Ingrese el primer número: "; 
         cin >> num1;
         cout << "Ingrese el segundo número: ";
         cin >> num2;
         result = num1 + num2;
         cout << "El resultado de la suma " << num1 << " + " << num2 << " es: " << result << endl;
     }
-    else if (choice == 2) {
+    else if (choice == 2) {  // Resta
         cout << "Ingrese el primer número: ";
         cin >> num1;
         cout << "Ingrese el segundo número: ";
@@ -46,7 +46,7 @@ int main() {
         result = num1 - num2;
         cout << "El resultado de la resta " << num1 << " - " << num2 << " es: " << result << endl;
     }
-    else if (choice == 3) {
+    else if (choice == 3) { // Multiplicación
         cout << "Ingrese el primer número: ";
         cin >> num1;
         cout << "Ingrese el segundo número: ";
@@ -54,7 +54,7 @@ int main() {
         result = num1 * num2;
         cout << "El resultado de la multiplicación " << num1 << " * " << num2 << " es: " << result << endl;
     }
-    else if (choice == 4) {
+    else if (choice == 4) { // División
         cout << "Ingrese el numerador: ";
         cin >> num1;
         cout << "Ingrese el denominador: ";
@@ -66,7 +66,7 @@ int main() {
             cout << "El resultado de la división " << num1 << " / " << num2 << " es: " << result << endl;
         }
     }
-    else if (choice == 5) {
+    else if (choice == 5) { // Raíz cuadrada
         cout << "Inrese un número: ";
         cin >> num1;
         if (num1 < 0) {
@@ -76,7 +76,7 @@ int main() {
             cout << "El resultado de la raíz cuadrada de " << num1 << " es: " << result << endl;
         }  
         }
-    else if (choice == 6) {
+    else if (choice == 6) { // Potencia
         cout << "Ingrese la base: ";
         cin >> num1;
         cout << "Ingrese el exponente: ";
@@ -84,7 +84,7 @@ int main() {
         result = pow(num1, num2);
         cout << "El resultado de " << num1 << " elevado a la potencia de "<< num2 << " es: " << result << endl;
     }
-    else if (choice == 7) {
+    else if (choice == 7) { // Módulo
         cout << "Ingrese el primer número: ";
         cin >> num1;
         cout << "Ingrese el segundo número: ";
@@ -96,13 +96,13 @@ int main() {
             cout << "El resultado del módulo " << num1 << " % " << num2 << " es: " << result << endl;
         }
     }
-    else if (choice == 8) {
+    else if (choice == 8) { // Valor absoluto
         cout << "Ingrese un número: ";
         cin >> num1;
         result = fabs(num1);
         cout << "El valor absoluto de " << num1 << " es: " << result << endl;
     }
-    else if(choice == 9) {
+    else if(choice == 9) {  // Salir
         exitProgram = true;
         cout << "Saliendo del programa. ¡Hasta luego!" << endl;
     }
