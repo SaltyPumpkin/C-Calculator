@@ -59,7 +59,7 @@ int main() {
         cin >> num1;
         cout << "Ingrese el denominador: ";
         cin >> num2;
-        if (num2 == 0) {
+        if (num2 == 0) {  // Evaluar si el denominador es cero
             cout << "Error: División por cero no está permitida." << endl;
         } else {
             result = num1 / num2;
