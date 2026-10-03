@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <cmath> // For mathematical functions like pow
 using namespace std;
 
 double performOperation (double a, char op, double b){
@@ -127,10 +127,6 @@ int main() {
         }
     }
     }
-
-
-
-    
 
     return 0;
 }
