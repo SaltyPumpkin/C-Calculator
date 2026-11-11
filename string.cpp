@@ -36,5 +36,11 @@ int main(){
     }
 
     cout << "Length of the message: " << message.length() << endl;
-return 0;
+
+    //Convert to uppercase
+    for(char& c : message){
+        c = toupper(c);
+    }
+    cout << "Uppercase message: " << message << endl;
+    return 0;
 }
