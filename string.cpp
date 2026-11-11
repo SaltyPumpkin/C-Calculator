@@ -1,3 +1,5 @@
+#include <algorithm>
+#include <cctype>
 #include <iostream>
 #include <string>
 using namespace std;
@@ -37,10 +39,24 @@ int main(){
 
     cout << "Length of the message: " << message.length() << endl;
 
+    //Remove exclamation mark
+    size_t exclamation_pos = message.find('!');
+    if(exclamation_pos != string::npos){
+        message.erase(exclamation_pos, 1);
+        cout << "Message without exclamation mark: " << message << endl;    
+    }
+
     //Convert to uppercase
     for(char& c : message){
         c = toupper(c);
     }
     cout << "Uppercase message: " << message << endl;
+
+    // Remove spaces
+    message.erase(remove(message.begin(), message.end(), ' '), message.end());
+    cout << "Message without spaces: " << message << endl;
+
+    
+
     return 0;
 }
