@@ -28,7 +28,7 @@ int main(){
     cout << "Letter 'o' appears " << count << " times" << endl;
 
     // Replace 'World' with 'Universe'
-    size_t pos = message.find("World");
+    size_t pos = message.find("world");
     if(pos != string::npos){
         message.replace(pos, 5, "Universe");
         cout << "Modified message: " << message << endl;
